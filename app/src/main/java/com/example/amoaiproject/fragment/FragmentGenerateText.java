@@ -109,7 +109,7 @@ public class FragmentGenerateText extends Fragment {
     //jangan lupa membuat API Key terlebih dahulu
     public void getResultGeminiAPI(String inputText) {
         GenerativeModel generativeModel = new GenerativeModel("gemini-1.5-flash",
-                "YOUR_API_KEY");
+                "AIzaSyAnJ26ep51hVCLmVvltWRRhRcZ57a9MGJE");
         GenerativeModelFutures modelFutures = GenerativeModelFutures.from(generativeModel);
         Content content = new Content.Builder()
                 .addText(inputText)

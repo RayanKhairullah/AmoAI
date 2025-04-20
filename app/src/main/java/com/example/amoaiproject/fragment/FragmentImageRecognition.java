@@ -204,7 +204,7 @@ public class FragmentImageRecognition extends Fragment {
 
     // Method untuk memanggil function Gemini AI dan menyimpan riwayat jawaban ke database
     public void buttonImageRecognitionGemini(Bitmap bitmap) {
-        GenerativeModel generativeModel = new GenerativeModel("gemini-1.5-flash", "YOUR_API_KEY");
+        GenerativeModel generativeModel = new GenerativeModel("gemini-1.5-flash", "AIzaSyAnJ26ep51hVCLmVvltWRRhRcZ57a9MGJE");
         GenerativeModelFutures modelFutures = GenerativeModelFutures.from(generativeModel);
         Content content = new Content.Builder()
                 .addText("Ini gambar apa?")
